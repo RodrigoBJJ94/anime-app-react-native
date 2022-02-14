@@ -4,23 +4,23 @@ import ImageHome from "../ImageHome";
 import TitleEnJp from "../Titles/TitleEnJp";
 import Styles from "./Styles";
 
-export default function Hunter({ navigation }) {
-    const [hunter, setHunter] = useState({});
+export default function Bleach({ navigation }) {
+    const [bleach, setBleach] = useState({});
 
     useEffect(() => {
-        fetch(`https://kitsu.io/api/edge/anime?filter[text]=hunter`)
+        fetch(`https://kitsu.io/api/edge/anime?filter[text]=bleach`)
             .then(res => res.json())
             .then(res => {
-                setHunter(res);
+                setBleach(res);
             })
     }, []);
 
     return (
         <>
             {
-                hunter.data && (
+                bleach.data && (
                     <SafeAreaView style={{}}>
-                        {hunter.data.slice(1, 2).map((anime) => (
+                        {bleach.data.slice(0, 1).map((anime) => (
                             <SafeAreaView key={anime.id} style={Styles.viewDirection}>
                                 <ImageHome navigation={navigation} anime={anime} />
                                 <TitleEnJp anime={anime} />

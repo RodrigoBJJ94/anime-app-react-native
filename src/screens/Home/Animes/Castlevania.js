@@ -1,29 +1,29 @@
 import React, { useState, useEffect } from "react";
 import { SafeAreaView } from "react-native";
 import ImageHome from "../ImageHome";
-import TitleKimetsu from "../Titles/TitleKimetsu";
+import TitleEnJp from "../Titles/TitleEnJp";
 import Styles from "./Styles";
 
-export default function KimetsuOne({ navigation }) {
-    const [kimetsu, setKimetsu] = useState({});
+export default function Castlevania({ navigation }) {
+    const [castlevania, setCastlevania] = useState({});
 
     useEffect(() => {
-        fetch(`https://kitsu.io/api/edge/anime?filter[text]=kimetsu`)
+        fetch(`https://kitsu.io/api/edge/anime?filter[text]=castlevania-season-2`)
             .then(res => res.json())
             .then(res => {
-                setKimetsu(res);
+                setCastlevania(res);
             })
     }, []);
 
     return (
         <>
             {
-                kimetsu.data && (
+                castlevania.data && (
                     <SafeAreaView style={{}}>
-                        {kimetsu.data.slice(5, 6).map((anime) => (
+                        {castlevania.data.slice(0, 1).map((anime) => (
                             <SafeAreaView key={anime.id} style={Styles.viewDirection}>
                                 <ImageHome navigation={navigation} anime={anime} />
-                                <TitleKimetsu />
+                                <TitleEnJp anime={anime} />
                             </SafeAreaView>
                         ))}
                     </SafeAreaView>

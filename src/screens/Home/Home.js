@@ -3,13 +3,13 @@ import { SafeAreaView, StyleSheet, Dimensions, Animated } from "react-native";
 import { background } from "./Background";
 import Statusbar from "./Statusbar";
 import Button from "./Button";
-import KimetsuOne from "./Animes/KimetsuOne";
+import DeathNote from "./Animes/DeathNote";
+import DragonBall from "./Animes/DragonBall";
+import Castlevania from "./Animes/Castlevania";
+import Bleach from "./Animes/Bleach";
+import Shipudden from "./Animes/Shipudden";
+import SaintSeiya from "./Animes/SaintSeiya";
 import OnePiece from "./Animes/OnePiece";
-import KimetsuTwo from "./Animes/KimetsuTwo";
-import Jujutsu from "./Animes/Jujutsu";
-import Naruto from "./Animes/Naruto";
-import Attack from "./Animes/Attack";
-import Hunter from "./Animes/Hunter";
 import Styles from "./Styles";
 
 export default function Home({ navigation }) {
@@ -30,7 +30,7 @@ export default function Home({ navigation }) {
                     return <Animated.Image
                         key={`image-${index}`} source={{ uri: image }}
                         style={[StyleSheet.absoluteFillObject, { opacity }]}
-                        blurRadius={20} />
+                        blurRadius={15} />
                 })}
             </SafeAreaView>
             <Button navigation={navigation} />
@@ -38,13 +38,13 @@ export default function Home({ navigation }) {
                 showsHorizontalScrollIndicator={false} onScroll={Animated.event(
                     [{ nativeEvent: { contentOffset: { x: scrollX } } }],
                     { useNativeDriver: true })}>
-                <KimetsuOne navigation={navigation} />
+                <DeathNote navigation={navigation} />
+                <DragonBall navigation={navigation} />
+                <Castlevania navigation={navigation} />
+                <Bleach navigation={navigation} />
+                <Shipudden navigation={navigation} />
+                <SaintSeiya navigation={navigation} />
                 <OnePiece navigation={navigation} />
-                <KimetsuTwo navigation={navigation} />
-                <Jujutsu navigation={navigation} />
-                <Naruto navigation={navigation} />
-                <Attack navigation={navigation} />
-                <Hunter navigation={navigation} />
             </Animated.ScrollView>
         </SafeAreaView >
     );

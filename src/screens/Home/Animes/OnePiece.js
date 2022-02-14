@@ -4,23 +4,23 @@ import ImageHome from "../ImageHome";
 import TitleEnJp from "../Titles/TitleEnJp";
 import Styles from "./Styles";
 
-export default function OnePiece({navigation}) {
-    const [one, setOne] = useState({});
+export default function OnePiece({ navigation }) {
+    const [onePiece, setOnePiece] = useState({});
 
     useEffect(() => {
-        fetch(`https://kitsu.io/api/edge/anime?filter[text]=one`)
+        fetch(`https://kitsu.io/api/edge/anime?filter[text]=one-piece`)
             .then(res => res.json())
             .then(res => {
-                setOne(res);
+                setOnePiece(res);
             })
     }, []);
 
     return (
         <>
             {
-                one.data && (
+                onePiece.data && (
                     <SafeAreaView style={{}}>
-                        {one.data.slice(0, 1).map((anime) => (
+                        {onePiece.data.slice(0, 1).map((anime) => (
                             <SafeAreaView key={anime.id} style={Styles.viewDirection}>
                                 <ImageHome navigation={navigation} anime={anime} />
                                 <TitleEnJp anime={anime} />
