@@ -30,7 +30,7 @@ export default StyleSheet.create({
         alignItems: "center",
     },
     viewGoBack: {
-        backgroundColor: "#fe1487",
+        backgroundColor: "#ea4335",
         width: "100%",
         paddingTop: 74,
         paddingBottom: 6,
@@ -58,9 +58,12 @@ export default StyleSheet.create({
     },
     viewDetails: {
         flex: 1,
-        backgroundColor: "#3f3f3f",
+        backgroundColor: "#343434",
     },
     load: {
         marginTop: -695,
+    },
+    viewTitle: {
+        width:"60%"
     }
 });

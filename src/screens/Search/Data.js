@@ -13,7 +13,7 @@ export default function Data({ navigation, anime }) {
                 <Image style={Styles.image}
                     source={{ uri: anime.attributes.posterImage.small }} />
             </TouchableOpacity>
-            <Text style={Styles.titles}>
+            <Text numberOfLines={1} style={Styles.titles}>
                 {anime.attributes.canonicalTitle}
             </Text>
         </>

@@ -3,7 +3,7 @@ import { StyleSheet, Dimensions } from "react-native";
 export default StyleSheet.create({
     searchMain: {
         flex: 1,
-        backgroundColor: '#3f3f3f',
+        backgroundColor: '#343434',
     },
     searchDirection: {
         flexDirection: "row",
@@ -11,35 +11,36 @@ export default StyleSheet.create({
         justifyContent: "center",
     },
     searchContainer: {
-        width: Dimensions.get("screen").width / 2.9,
+        width: Dimensions.get("screen").width / 2.7,
         marginRight: 20,
         marginLeft: 20,
         alignItems: "center",
     },
     searchIcon: {
         alignSelf: 'flex-end',
-        marginTop: -54,
-        marginRight: 40,
+        marginTop: -58,
+        marginRight: 28,
     },
     image: {
-        width: 140,
-        height: 165,
+        width: 155,
+        height: 175,
         borderRadius: 6,
     },
     titles: {
-        marginTop: 8,
-        marginBottom: 8,
-        fontSize: 15.3,
+        marginTop: 10,
+        marginBottom: 10,
+        fontSize: 13.5,
         color: '#ffffff',
+        textAlign: "center",
     },
     search: {
-        marginLeft: 40,
-        marginRight: 40,
-        marginTop: 68,
-        marginBottom: 15,
+        marginLeft: 30,
+        marginRight: 30,
+        marginTop: 45,
+        marginBottom: 20,
         color: '#ffffff',
-        borderBottomWidth: 1.2,
-        borderBottomColor: '#dd1b7c',
+        borderBottomWidth: 1.5,
+        borderBottomColor: '#ea4335',
         fontSize: 20,
     }
 });

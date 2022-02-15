@@ -10,7 +10,7 @@ export default function Button({ navigation }) {
             <Icon
                 name="search"
                 size={30}
-                color="#dd1b7c"
+                color="#ea4335"
                 style={Styles.search} />
         </TouchableOpacity>
     );

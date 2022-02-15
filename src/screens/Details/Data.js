@@ -16,8 +16,8 @@ export default function DataOne({ navigation, anime, animeData }) {
                         <Text style={Styles.goBack}>Back</Text>
                     </TouchableOpacity>
                 </SafeAreaView>
-                <SafeAreaView>
-                    <Text style={Styles.title}>
+                <SafeAreaView style={Styles.viewTitle}>
+                    <Text numberOfLines={1} style={Styles.title}>
                         {animeData !== "attack" ? anime.attributes.titles.en_jp
                             : anime.attributes.titles.en}
                     </Text>

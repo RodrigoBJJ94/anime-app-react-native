@@ -8,7 +8,7 @@ export default function DragonBall({navigation}) {
     const [dragonBall, setDragonBall] = useState({});
 
     useEffect(() => {
-        fetch(`https://kitsu.io/api/edge/anime?filter[text]=dragon-ball-z`)
+        fetch(`https://kitsu.io/api/edge/anime?filter[text]=dragon-ball-super-broly`)
             .then(res => res.json())
             .then(res => {
                 setDragonBall(res);

@@ -4,23 +4,23 @@ import ImageHome from "../ImageHome";
 import TitleEnJp from "../Titles/TitleEnJp";
 import Styles from "./Styles";
 
-export default function Castlevania({ navigation }) {
-    const [castlevania, setCastlevania] = useState({});
+export default function Jujutsu({ navigation }) {
+    const [jujutsu, setJujutsu] = useState({});
 
     useEffect(() => {
-        fetch(`https://kitsu.io/api/edge/anime?filter[text]=castlevania-season-2`)
+        fetch(`https://kitsu.io/api/edge/anime?filter[text]=jujutsu`)
             .then(res => res.json())
             .then(res => {
-                setCastlevania(res);
+                setJujutsu(res);
             })
     }, []);
 
     return (
         <>
             {
-                castlevania.data && (
+                jujutsu.data && (
                     <SafeAreaView style={{}}>
-                        {castlevania.data.slice(0, 1).map((anime) => (
+                        {jujutsu.data.slice(0, 1).map((anime) => (
                             <SafeAreaView key={anime.id} style={Styles.viewDirection}>
                                 <ImageHome navigation={navigation} anime={anime} />
                                 <TitleEnJp anime={anime} />
