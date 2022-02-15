@@ -32,6 +32,7 @@ export default StyleSheet.create({
         fontSize: 13.5,
         color: '#ffffff',
         textAlign: "center",
+        fontFamily: "Montserrat-Regular",
     },
     search: {
         marginLeft: 30,
@@ -40,7 +41,8 @@ export default StyleSheet.create({
         marginBottom: 20,
         color: '#ffffff',
         borderBottomWidth: 1.5,
-        borderBottomColor: '#ea4335',
+        borderBottomColor: '#f03f0a',
         fontSize: 20,
+        fontFamily: "Montserrat-Regular",
     }
 });

@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
     viewText: {
-        backgroundColor: '#ea4335',
+        backgroundColor: '#f03f0a',
         padding: 5,
         borderRadius: 15,
         width: 206,
@@ -12,8 +12,9 @@ export default StyleSheet.create({
         justifyContent: "center",
     },
     title: {
-        color: '#ffffff',
+        color: "#ffffff",
         fontSize: 15,
-        fontWeight: '600',
+        fontFamily: "Montserrat-Regular",
+        textAlign: "center",
     }
 });

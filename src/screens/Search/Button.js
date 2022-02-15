@@ -10,7 +10,7 @@ export default function Button({ setTextSearch, text }) {
             <Icon
                 name="search"
                 size={30}
-                color="#ea4335"
+                color="#f03f0a"
                 style={Styles.searchIcon}
             />
         </TouchableOpacity>

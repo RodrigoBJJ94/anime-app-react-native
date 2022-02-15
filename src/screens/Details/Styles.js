@@ -8,7 +8,9 @@ export default StyleSheet.create({
         color: "#ffffff",
         fontSize: 17,
         position: "absolute",
-        marginLeft: 26,
+        marginLeft: 22,
+        fontFamily: "Montserrat-Bold",
+        color: "#343434",
     },
     buttonGoBack: {
         position: "absolute",
@@ -19,18 +21,20 @@ export default StyleSheet.create({
     },
     iconButton: {
         marginLeft: -1,
+        color: "#343434",
     },
     viewDirection: {
         alignItems: "center",
         justifyContent: "center",
     },
     viewText: {
-        padding: 25,
+        padding: 15,
+        paddingTop: 25,
         marginTop: -9,
         alignItems: "center",
     },
     viewGoBack: {
-        backgroundColor: "#ea4335",
+        backgroundColor: "#f03f0a",
         width: "100%",
         paddingTop: 74,
         paddingBottom: 6,
@@ -39,10 +43,11 @@ export default StyleSheet.create({
         textAlign: "center",
         color: '#ffffff',
         fontSize: 16.5,
+        fontFamily: "Montserrat-Regular",
     },
     image: {
-        width: 140,
-        height: 200,
+        width: 170,
+        height: 220,
         borderRadius: 10,
         marginTop: 20,
     },
@@ -51,9 +56,9 @@ export default StyleSheet.create({
     },
     title: {
         color: "#ffffff",
-        fontSize: 17.5,
+        fontSize: 17,
         textAlign: "center",
-        fontWeight: "500",
+        fontFamily: "Montserrat-Bold",
         marginTop: -35,
     },
     viewDetails: {
@@ -64,6 +69,6 @@ export default StyleSheet.create({
         marginTop: -695,
     },
     viewTitle: {
-        width:"60%"
+        width: "60%",
     }
 });

@@ -4,7 +4,7 @@ export default StyleSheet.create({
     viewDirection: {
         alignItems: "center",
         justifyContent: "center",
-        marginTop: 45,
+        marginTop: 25,
         width: Dimensions.get("screen").width,
     },
     buttonSearch: {
@@ -20,7 +20,7 @@ export default StyleSheet.create({
     },
     image: {
         width: 340,
-        height: 540,
-        borderRadius: 20,
+        height: 580,
+        borderRadius: 25,
     }
 });
