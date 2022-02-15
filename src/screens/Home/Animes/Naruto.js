@@ -4,23 +4,23 @@ import ImageHome from "../ImageHome";
 import TitleEnJp from "../Titles/TitleEnJp";
 import Styles from "./Styles";
 
-export default function Shipudden({ navigation }) {
-    const [shipudden, setShipudden] = useState({});
+export default function Naruto({ navigation }) {
+    const [naruto, setNaruto] = useState({});
 
     useEffect(() => {
         fetch(`https://kitsu.io/api/edge/anime?filter[text]=naruto-shipudden`)
             .then(res => res.json())
             .then(res => {
-                setShipudden(res);
+                setNaruto(res);
             })
     }, []);
 
     return (
         <>
             {
-                shipudden.data && (
+                naruto.data && (
                     <SafeAreaView style={{}}>
-                        {shipudden.data.slice(0, 1).map((anime) => (
+                        {naruto.data.slice(0, 1).map((anime) => (
                             <SafeAreaView key={anime.id} style={Styles.viewDirection}>
                                 <ImageHome navigation={navigation} anime={anime} />
                                 <TitleEnJp anime={anime} />

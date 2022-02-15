@@ -4,23 +4,23 @@ import ImageHome from "../ImageHome";
 import TitleEnJp from "../Titles/TitleEnJp";
 import Styles from "./Styles";
 
-export default function DragonBall({navigation}) {
-    const [dragonBall, setDragonBall] = useState({});
+export default function kimetsu({navigation}) {
+    const [kimetsu, setKimetsu] = useState({});
 
     useEffect(() => {
-        fetch(`https://kitsu.io/api/edge/anime?filter[text]=dragon-ball-super-broly`)
+        fetch(`https://kitsu.io/api/edge/anime?filter[text]=kimetsu`)
             .then(res => res.json())
             .then(res => {
-                setDragonBall(res);
+                setKimetsu(res);
             })
     }, []);
 
     return (
         <>
             {
-                dragonBall.data && (
+                kimetsu.data && (
                     <SafeAreaView style={{}}>
-                        {dragonBall.data.slice(0, 1).map((anime) => (
+                        {kimetsu.data.slice(0, 1).map((anime) => (
                             <SafeAreaView key={anime.id} style={Styles.viewDirection}>
                                 <ImageHome navigation={navigation} anime={anime} />
                                 <TitleEnJp anime={anime} />

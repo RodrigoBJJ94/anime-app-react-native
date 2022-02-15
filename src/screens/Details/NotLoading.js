@@ -11,14 +11,14 @@ export default function NotLoading() {
                 <TouchableOpacity style={Styles.buttonGoBack}>
                     <Icon
                         name="chevron-left"
-                        size={28}
+                        size={24}
                         color="#ffffff"
                         style={Styles.iconButton}
                     />
                     <Text style={Styles.goBack}>Back</Text>
                 </TouchableOpacity>
             </SafeAreaView>
-            <UIActivityIndicator color="#f03f0a" size={24} style={Styles.load} />
+            <UIActivityIndicator color="#039eaf" size={24} style={Styles.load} />
         </SafeAreaView>
     );
 };

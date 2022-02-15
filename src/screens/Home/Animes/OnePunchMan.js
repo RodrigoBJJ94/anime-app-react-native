@@ -4,22 +4,22 @@ import ImageHome from "../ImageHome";
 import TitleEnJp from "../Titles/TitleEnJp";
 import Styles from "./Styles";
 
-export default function SaintSeiya({ navigation }) {
-    const [saintSeiya, setSaintSeiya] = useState({});
+export default function OnePunchMan({ navigation }) {
+    const [onePunchMan, setOnePunchMan] = useState({});
 
     useEffect(() => {
-        fetch(`https://kitsu.io/api/edge/anime?filter[text]=saint-seiya-the-hades-chapter-inferno`)
+        fetch(`https://kitsu.io/api/edge/anime?filter[text]=one-punch-man`)
             .then(res => res.json())
             .then(res => {
-                setSaintSeiya(res);
+                setOnePunchMan(res);
             })
     }, []);
 
     return (
         <>
-            {saintSeiya.data && (
+            {onePunchMan.data && (
                 <SafeAreaView style={{}}>
-                    {saintSeiya.data.slice(0, 1).map((anime) => (
+                    {onePunchMan.data.slice(0, 1).map((anime) => (
                         <SafeAreaView key={anime.id} style={Styles.viewDirection}>
                             <ImageHome navigation={navigation} anime={anime} />
                             <TitleEnJp anime={anime} />

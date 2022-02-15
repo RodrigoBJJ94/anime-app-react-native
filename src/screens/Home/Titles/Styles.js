@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
     viewText: {
-        backgroundColor: '#f03f0a',
+        backgroundColor: '#039eaf',
         padding: 5,
         borderRadius: 15,
         width: 206,

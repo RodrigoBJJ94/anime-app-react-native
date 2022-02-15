@@ -11,7 +11,7 @@ export default function DataOne({ navigation, anime, animeData }) {
                 <SafeAreaView style={Styles.viewGoBack}>
                     <TouchableOpacity onPress={() => navigation.goBack()}
                         style={Styles.buttonGoBack}>
-                        <Icon name="chevron-left" size={28} color="#ffffff"
+                        <Icon name="chevron-left" size={24} color="#ffffff"
                             style={Styles.iconButton} />
                         <Text style={Styles.goBack}>Back</Text>
                     </TouchableOpacity>

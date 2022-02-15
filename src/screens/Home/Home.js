@@ -4,11 +4,11 @@ import { background } from "./Background";
 import Statusbar from "./Statusbar";
 import Button from "./Button";
 import DeathNote from "./Animes/DeathNote";
-import DragonBall from "./Animes/DragonBall";
+import Kimetsu from "./Animes/Kimetsu";
 import Jujutsu from "./Animes/Jujutsu";
 import Bleach from "./Animes/Bleach";
-import Shipudden from "./Animes/Shipudden";
-import SaintSeiya from "./Animes/SaintSeiya";
+import Naruto from "./Animes/Naruto";
+import OnePunchMan from "./Animes/OnePunchMan";
 import OnePiece from "./Animes/OnePiece";
 import Styles from "./Styles";
 
@@ -38,13 +38,13 @@ export default function Home({ navigation }) {
                 showsHorizontalScrollIndicator={false} onScroll={Animated.event(
                     [{ nativeEvent: { contentOffset: { x: scrollX } } }],
                     { useNativeDriver: true })}>
-                <SaintSeiya navigation={navigation} />
                 <DeathNote navigation={navigation} />
-                <DragonBall navigation={navigation} />
-                <Jujutsu navigation={navigation} />
+                <Naruto navigation={navigation} />
                 <Bleach navigation={navigation} />
-                <Shipudden navigation={navigation} />
+                <Kimetsu navigation={navigation} />
+                <Jujutsu navigation={navigation} />
                 <OnePiece navigation={navigation} />
+                <OnePunchMan navigation={navigation} />
             </Animated.ScrollView>
         </SafeAreaView >
     );

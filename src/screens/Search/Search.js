@@ -18,7 +18,7 @@ export default function Search({ navigation }) {
                     setList(res);
                 })
         }
-    }, [text, textSearch]);
+    }, [text, textSearch]);//
 
     return (
         <SafeAreaView style={Styles.searchMain}>
