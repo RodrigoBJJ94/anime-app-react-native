@@ -1,25 +1,17 @@
 import React from "react";
 import { SafeAreaView, Text, TouchableOpacity, Image, ScrollView } from "react-native";
-import Icon from "react-native-vector-icons/Feather";
 import YoutubePlayer from "react-native-youtube-iframe";
+import GoBack from "./GoBack";
 import Styles from "./Styles";
 
-export default function DataOne({ navigation, anime, animeData }) {
+export default function DataOne({ navigation, anime }) {
     return (
         <>
             <SafeAreaView style={Styles.viewDirection}>
-                <SafeAreaView style={Styles.viewGoBack}>
-                    <TouchableOpacity onPress={() => navigation.goBack()}
-                        style={Styles.buttonGoBack}>
-                        <Icon name="chevron-left" size={24} color="#ffffff"
-                            style={Styles.iconButton} />
-                        <Text style={Styles.goBack}>Back</Text>
-                    </TouchableOpacity>
-                </SafeAreaView>
+                <GoBack navigation={navigation} />
                 <SafeAreaView style={Styles.viewTitle}>
                     <Text numberOfLines={1} style={Styles.title}>
-                        {animeData !== "attack" ? anime.attributes.titles.en_jp
-                            : anime.attributes.titles.en}
+                        {anime.attributes.titles.en_jp}
                     </Text>
                 </SafeAreaView>
             </SafeAreaView>

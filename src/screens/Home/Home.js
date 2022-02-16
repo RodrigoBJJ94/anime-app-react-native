@@ -30,7 +30,7 @@ export default function Home({ navigation }) {
                     return <Animated.Image
                         key={`image-${index}`} source={{ uri: image }}
                         style={[StyleSheet.absoluteFillObject, { opacity }]}
-                        blurRadius={15} />
+                        blurRadius={20} />
                 })}
             </SafeAreaView>
             <Button navigation={navigation} />

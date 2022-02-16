@@ -22,13 +22,13 @@ export default StyleSheet.create({
         marginRight: 28,
     },
     image: {
-        width: 155,
-        height: 175,
+        width: 150,
+        height: 165,
         borderRadius: 6,
     },
     titles: {
-        marginTop: 12,
-        marginBottom: 12,
+        marginTop: 10,
+        marginBottom: 10,
         fontSize: 13.5,
         color: '#ffffff',
         textAlign: "center",
@@ -37,12 +37,35 @@ export default StyleSheet.create({
     search: {
         marginLeft: 28,
         marginRight: 28,
-        marginTop: 45,
+        marginTop: 12,
         marginBottom: 20,
         color: '#ffffff',
         borderBottomWidth: 1.5,
         borderBottomColor: '#039eaf',
         fontSize: 20,
         fontFamily: "Montserrat-Regular",
+    },
+    goBack: {
+        color: "#ffffff",
+        fontSize: 15,
+        position: "absolute",
+        marginLeft: 18,
+        fontFamily: "Montserrat-Bold",
+    },
+    buttonGoBack: {
+        position: "absolute",
+        height: 30,
+        width: "25%",
+        marginTop: 42,
+        justifyContent: "center",
+    },
+    iconButton: {
+        marginLeft: -1,
+    },
+    viewGoBack: {
+        backgroundColor: "#039eaf",
+        width: "100%",
+        paddingTop: 74,
+        paddingBottom: 6,
     }
 });

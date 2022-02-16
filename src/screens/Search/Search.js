@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { SafeAreaView, ScrollView } from "react-native";
+import GoBack from "./GoBack";
 import SearchInput from "./SearchInput";
 import Button from "./Button";
 import Data from "./Data";
@@ -22,18 +23,19 @@ export default function Search({ navigation }) {
 
     return (
         <SafeAreaView style={Styles.searchMain}>
+            <GoBack navigation={navigation} />
             <SearchInput value={text} setText={(search) => setText(search)} />
             <Button setTextSearch={setTextSearch} text={text} />
             <ScrollView>
-            {list.data && (
-                <SafeAreaView style={Styles.searchDirection}>
-                    {list.data.map((anime) => (
-                        <SafeAreaView key={anime.id} style={Styles.searchContainer} >
-                            <Data navigation={navigation} anime={anime} />
-                        </SafeAreaView>
-                    ))}
-                </SafeAreaView>
-            )}
+                {list.data && (
+                    <SafeAreaView style={Styles.searchDirection}>
+                        {list.data.map((anime) => (
+                            <SafeAreaView key={anime.id} style={Styles.searchContainer} >
+                                <Data navigation={navigation} anime={anime} />
+                            </SafeAreaView>
+                        ))}
+                    </SafeAreaView>
+                )}
             </ScrollView>
         </SafeAreaView>
     );

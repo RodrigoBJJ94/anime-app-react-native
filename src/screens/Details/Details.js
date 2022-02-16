@@ -41,7 +41,7 @@ export default function Details({ navigation, route }) {
                 <SafeAreaView>
                     {list.data.slice(0, 1).map((anime) => (
                         <SafeAreaView key={anime.id}>
-                            <Data navigation={navigation} anime={anime} animeData={animeData} />
+                            <Data navigation={navigation} anime={anime} />
                         </SafeAreaView>
                     ))}
                 </SafeAreaView>

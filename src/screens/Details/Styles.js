@@ -63,9 +63,6 @@ export default StyleSheet.create({
         flex: 1,
         backgroundColor: "#343434",
     },
-    load: {
-        marginTop: -695,
-    },
     viewTitle: {
         width: "65%",
     }

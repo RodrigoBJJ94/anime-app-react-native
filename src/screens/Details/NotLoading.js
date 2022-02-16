@@ -18,7 +18,7 @@ export default function NotLoading() {
                     <Text style={Styles.goBack}>Back</Text>
                 </TouchableOpacity>
             </SafeAreaView>
-            <UIActivityIndicator color="#039eaf" size={24} style={Styles.load} />
+            <UIActivityIndicator color="#039eaf" size={50} />
         </SafeAreaView>
     );
 };
