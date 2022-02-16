@@ -3,7 +3,7 @@ import { StyleSheet, Dimensions } from "react-native";
 export default StyleSheet.create({
     searchMain: {
         flex: 1,
-        backgroundColor: '#343434',
+        backgroundColor: '#252525',
     },
     searchDirection: {
         flexDirection: "row",

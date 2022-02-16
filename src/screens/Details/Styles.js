@@ -61,7 +61,7 @@ export default StyleSheet.create({
     },
     viewDetails: {
         flex: 1,
-        backgroundColor: "#343434",
+        backgroundColor: "#252525",
     },
     viewTitle: {
         width: "65%",

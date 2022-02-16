@@ -1,10 +1,10 @@
 import React from "react";
-import { TouchableOpacity, Image, Text } from "react-native";
+import { SafeAreaView, TouchableOpacity, Image, Text } from "react-native";
 import Styles from "./Styles";
 
 export default function Data({ navigation, anime }) {
     return (
-        <>
+        <SafeAreaView>
             <TouchableOpacity onPress={() => {
                 navigation.navigate("Details", {
                     anime: anime.attributes.canonicalTitle
@@ -16,6 +16,6 @@ export default function Data({ navigation, anime }) {
             <Text numberOfLines={1} style={Styles.titles}>
                 {anime.attributes.canonicalTitle}
             </Text>
-        </>
+        </SafeAreaView>
     );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import { SafeAreaView, Text, TouchableOpacity, Image, ScrollView } from "react-native";
+import { SafeAreaView, Text, Image, ScrollView } from "react-native";
 import YoutubePlayer from "react-native-youtube-iframe";
 import GoBack from "./GoBack";
 import Styles from "./Styles";
